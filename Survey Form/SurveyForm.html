@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="SurveyForm.css">
+  </head>
+  <body>
+    <div>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+     Thank you for taking the time to help us improve the platform.</p>
+    </div>
+      <form action="" id="survey-form">
+        <label id="name-label">Name:</label>
+        <input id="name" type="text" placeholder="Enter your name" required> 
+        <label id="email-label">Email:</label>
+        <input id="email" type="email" placeholder="Enter your email" required>  
+        <label id="number-label">Age: (optional)</label>
+        <input id="number" type="number" placeholder="Enter your age" min="13" max="120">
+        <label>What is your gender?</label>
+        <div id="option1">
+        <input id="gender" type="radio" name="gender" value="female" checked> Female
+        <input id="gender" type="radio" name="gender" value="male"> Male
+        <label>Would you recommend this company to friends or family?</label>
+      <div id="option1">
+        <input id="refer" type="checkbox" required name="refer" value="yes" checked> Yes
+        <input id="refer" type="checkbox" required name="refer" value="no"> No
+        <label for="dropdown">How satisfied are you with our product/service?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="not satisfied">not satisfied</option>
+          <option value="very satisfied">very satisfied</option>
+        </select>
+        <label for="improve">Any comments or suggestions?</label>
+        <textarea id="improve" name="improve" rows="3" cols="30" placeholder="Enter your comments or suggestions here..."></textarea>
+        <input id="submit" type="submit">
+      </form>
+  </body>
+<html>
